@@ -1,0 +1,53 @@
+:root {
+  --primary: #c04470;
+  --primary-dark: #9d2d55;
+  --page-bg: #fff4f7;
+  --ink: #3a2630;
+  --accent: #ffe0e9;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page-bg); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+.navbar-custom { background: white; border-bottom: 1px solid rgba(0,0,0,.07); padding: 14px 0; box-shadow: 0 2px 10px rgba(0,0,0,.03); }
+.navbar-brand { color: var(--primary) !important; font-weight: 700; letter-spacing: -.3px; }
+.nav-link { color: var(--ink) !important; margin-left: 14px; font-weight: 600; }
+.nav-link:hover { color: var(--primary) !important; }
+.page-content { padding-top: 42px; padding-bottom: 48px; min-height: calc(100vh - 150px); }
+.page-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 28px; }
+.eyebrow { color: var(--primary); font-size: 12px; letter-spacing: 2px; font-weight: 700; margin-bottom: 8px; }
+h1 { font-size: clamp(28px, 4vw, 38px); font-weight: 750; letter-spacing: -1px; margin: 0 0 8px; }
+.subtitle { color: #6b7280; margin: 0; }
+.count-box { background: var(--accent); border-radius: 14px; padding: 14px 22px; display: flex; flex-direction: column; min-width: 100px; text-align: center; }
+.count-number { font-size: 25px; font-weight: 800; color: var(--primary); }
+.count-label { font-size: 12px; color: var(--ink); }
+.employee-area, .form-panel { background: white; border-radius: 16px; padding: 22px; box-shadow: 0 8px 25px rgba(30,41,59,.06); }
+.employee-table { margin: 0; }
+.employee-table thead th { color: var(--primary-dark); background: var(--accent); border-bottom: 0; padding: 14px; white-space: nowrap; }
+.employee-table td { padding: 15px 14px; }
+.employee-name { font-weight: 700; }
+.employee-card { height: 100%; border: 1px solid #edf0f4; border-radius: 14px; padding: 20px; background: white; transition: transform .2s ease, box-shadow .2s ease; }
+.employee-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.07); }
+.avatar { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--accent); color: var(--primary); font-size: 20px; font-weight: 800; margin-bottom: 15px; }
+.small-label { color: var(--primary); font-size: 10px; letter-spacing: 1.5px; font-weight: 700; }
+.employee-card h2 { font-size: 19px; font-weight: 700; margin: 8px 0; }
+.email { color: #6b7280; font-size: 14px; margin: 0; overflow-wrap: anywhere; }
+.employee-list { display: grid; gap: 10px; }
+.employee-row { display: flex; align-items: center; gap: 16px; padding: 15px; border: 1px solid #edf0f4; border-radius: 12px; background: white; }
+.employee-id { width: 42px; height: 42px; display: grid; place-items: center; background: var(--accent); color: var(--primary); border-radius: 10px; font-weight: 800; }
+.employee-details { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.employee-details span { color: #6b7280; overflow-wrap: anywhere; }
+.form-panel { max-width: 650px; }
+.form-label { font-weight: 700; }
+.form-control { padding: 11px 12px; border-color: #dfe4eb; }
+.form-control:focus { border-color: var(--primary); box-shadow: 0 0 0 .2rem var(--accent); }
+.btn-primary-custom { background: var(--primary); color: white; border: none; padding: 11px 18px; font-weight: 700; }
+.btn-primary-custom:hover { background: var(--primary-dark); color: white; }
+.message { background: white; border-radius: 12px; padding: 18px; }
+.footer { text-align: center; padding: 18px; color: #7b8492; font-size: 13px; border-top: 1px solid rgba(0,0,0,.06); }
+@media (max-width: 575px) {
+  .page-content { padding-top: 28px; }
+  .page-heading { align-items: flex-start; }
+  .count-box { padding: 10px 14px; min-width: 82px; }
+  .employee-area, .form-panel { padding: 14px; }
+  .navbar-brand { font-size: 15px; }
+  .nav-link { margin-left: 6px; font-size: 14px; }
+}
